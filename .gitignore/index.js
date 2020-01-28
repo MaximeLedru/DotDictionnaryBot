@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 bot.login(process.env.TOKEN);
 var parler = true;
-const ms = require("ms");
+
 
 
 const Bot = new Discord.Client()
@@ -29,7 +29,7 @@ bot.on('message', message => {
 
     if (message.content === '.info') {
         message.react("👍")
-        message.channel.send('```Mon créateur : Wukimos#0762\n Ma version ! 1.0.1 \nMes fonctions : Je joue de la musique, je traduit le langage . , et je répond à tout mes maîtres.```');
+        message.channel.send('```Mon créateur : Wukimos#0762\n Ma version ! 1.0.2 \nMes fonctions : Je joue de la musique, je traduit le langage . , et je répond à tout mes maîtres.```');
 
     }
 });
