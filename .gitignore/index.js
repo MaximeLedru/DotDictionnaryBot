@@ -16,20 +16,15 @@ bot.on('ready', () => {
 });
 
 
-bot.on('message', message => {
+bot.on('message', member, message => {
 
         if (message.content === '.clear') {
-            if(member.roles.get('671646669204619265') || member.roles.get('671683382492528681')){
             message.react("👍");
             message.channel.bulkDelete(100);
             message.reply('Les messages ont été supprimé maître !');
-            }
-            else{
-                message.react("👎");
-                message.reply('Espèce de paysan, comme ose-tu me donner des ordres ?!');
-            }
-        
-    }
+            
+
+
 });
 bot.on('message', message => {
 
