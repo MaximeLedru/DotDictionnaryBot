@@ -16,15 +16,17 @@ bot.on('ready', () => {
 });
 
 
-bot.on('message', member, message => {
+bot.on('message', message => {
 
-        if (message.content === '.clear') {
-            message.react("👍");
-            message.channel.bulkDelete(100);
-            message.reply('Les messages ont été supprimé maître !');
-            
+    if (message.content === '.clear') {
+        message.react("👍");
+        message.channel.bulkDelete(100);
+        message.reply('Les messages ont été supprimé maître !');
 
 
+
+
+    }
 });
 bot.on('message', message => {
 
@@ -76,7 +78,7 @@ bot.on('message', message => {
 });
 bot.on('message', message => {
 
-    if (message.content === 'ta gueule Esclave' || message.content === 'ta gueule esclave'  ) {
+    if (message.content === 'ta gueule Esclave' || message.content === 'ta gueule esclave') {
         message.react("👍")
         message.reply("D'accord maître, je ferme ma gueule :)");
         bot.user.setActivity("Je ferme ma gueule");
@@ -97,11 +99,9 @@ bot.on('message', message => {
 //Message de bienvenue
 
 bot.on('guildMemberAdd', member => {
-    member.guild.channels.get('671687716622303251').send("Bienvenue sur le serveur " + member+" ! \n\n\n pour connaître mes commandes, il faut que tu fasse **.help**");
+    member.guild.channels.get('671687716622303251').send("Bienvenue sur le serveur " + member + " ! \n\n\n pour connaître mes commandes, il faut que tu fasse **.help**");
 });
 
 bot.on('guildMemberRemove', member => {
     member.guild.channels.get('671687716622303251').send(member + " a quitté le royaume.. Dommage pour lui :'(");
 });
-
-
