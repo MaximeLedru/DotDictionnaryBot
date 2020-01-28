@@ -94,5 +94,5 @@ bot.on('guildMemberAdd', member => {
 bot.on('guildMemberRemove', member => {
     member.guild.channels.get('671687716622303251').send(member + " a quitté le royaume.. Dommage pour lui :'(");
 });
-//commandes admin
+
 
