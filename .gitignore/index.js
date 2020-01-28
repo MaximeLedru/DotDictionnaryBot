@@ -16,6 +16,13 @@ bot.on('message', message => {
         }
     }
 });
+client.on('message', message => {
+   if (message.content == '.clear') {
+       
+      message.delete(1000); //Supposed to delete message
+      message.reply('Messages supprimés maître');
+   }
+});
 bot.on('message', message => {
 
         if (message.content === '.help') {
