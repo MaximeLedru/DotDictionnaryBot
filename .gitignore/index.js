@@ -43,6 +43,14 @@ bot.on('message', message => {
 });
 bot.on('message', message => {
     if (parler == true) {
+        if (message.content === '.') {
+            message.react("👍")
+            message.reply('*Cela veut dire : content*');
+        }
+    }
+});
+bot.on('message', message => {
+    if (parler == true) {
         if (message.content === '..') {
             message.react("👍")
             message.reply('*Cela veut dire : je m en fou*');
