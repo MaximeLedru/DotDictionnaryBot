@@ -56,7 +56,7 @@ bot.on('message', message => {
     if (parler == true) {
         if (message.content === ',.,') {
             message.react("👍")
-            message.reply('*Cela veut dire : J'te mange :p*');
+            message.reply('*Cela veut dire : J\'te mange : p * ');
         }
     }
 });
@@ -104,7 +104,7 @@ bot.on('message', message => {
     if (parler == true) {
         if (message.content === '.-.') {
             message.react("👍")
-            message.reply('*Cela veut dire : Mal à l'aise*');
+            message.reply('*Cela veut dire : Mal à l\'aise * ');
         }
     }
 });
