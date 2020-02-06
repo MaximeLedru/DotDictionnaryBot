@@ -32,7 +32,7 @@ bot.on('message', message => {
 
     if (message.content === '.info') {
         message.react("👍")
-        message.channel.send('```Mon créateur : Wukimos#0762\n Ma version ! 1.0.2 \nMes fonctions : Je joue de la musique, je traduit le langage . , et je répond à tout mes maîtres.```');
+        message.channel.send('```Mon créateur : Wukimos#0762\n Ma version ! 1.0.3 \nMes fonctions : Je joue de la musique, je traduit le langage . , et je répond à tout mes maîtres.```');
 
     }
 });
@@ -40,8 +40,88 @@ bot.on('message', message => {
 
     if (message.content === '.help') {
         message.react("👍")
-        message.author.send('Voici mes commandes maître : \n***Ta gueule DotDictionnary*** : je ferme ma bouche \n ***Parle DotDictionnary***: J ouvre ma bouche');
+        message.author.send('Voici mes commandes maître : \n***Ta gueule Esclave*** : je ferme ma bouche \n ***Parle Esclave***: J ouvre ma bouche');
 
+    }
+});
+bot.on('message', message => {
+    if (parler == true) {
+        if (message.content === '. .') {
+            message.react("👍")
+            message.reply('*Cela veut dire : Peur à mon âme*');
+        }
+    }
+});
+bot.on('message', message => {
+    if (parler == true) {
+        if (message.content === ',.,') {
+            message.react("👍")
+            message.reply('*Cela veut dire : J'te mange :p*');
+        }
+    }
+});
+bot.on('message', message => {
+    if (parler == true) {
+        if (message.content === '.,.') {
+            message.react("👍")
+            message.reply('*Cela veut dire : Canard coin coin 🦆*');
+        }
+    }
+});
+bot.on('message', message => {
+    if (parler == true) {
+        if (message.content === ',') {
+            message.react("👍")
+            message.reply('*Cela veut dire : Ui*');
+        }
+    }
+});
+bot.on('message', message => {
+    if (parler == true) {
+        if (message.content === "'.'") {
+            message.react("👍")
+            message.reply('*Cela veut dire : Bonjour*');
+        }
+    }
+});
+bot.on('message', message => {
+    if (parler == true) {
+        if (message.content === '.".') {
+            message.react("👍")
+            message.reply('*Cela veut dire : Bonne nuit !*');
+        }
+    }
+});
+bot.on('message', message => {
+    if (parler == true) {
+        if (message.content === ".'-") {
+            message.react("👍")
+            message.reply('*Cela veut dire : Bon appétit !*');
+        }
+    }
+});
+bot.on('message', message => {
+    if (parler == true) {
+        if (message.content === '.-.') {
+            message.react("👍")
+            message.reply('*Cela veut dire : Mal à l'aise*');
+        }
+    }
+});
+bot.on('message', message => {
+    if (parler == true) {
+        if (message.content === '"."') {
+            message.react("👍")
+            message.reply('*Cela veut dire : Aurevoir*');
+        }
+    }
+});
+bot.on('message', message => {
+    if (parler == true) {
+        if (message.content === '._.') {
+            message.react("👍")
+            message.reply('*Cela veut dire : OK.*');
+        }
     }
 });
 bot.on('message', message => {
