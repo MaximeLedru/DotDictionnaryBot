@@ -78,7 +78,7 @@ bot.on('message', message => {
 });
 bot.on('message', message => {
     if (parler == true) {
-        if (message.content === "'.'") {
+        if (message.content === '\'.\'') {
             message.react("👍")
             message.reply('*Cela veut dire : Bonjour*');
         }
@@ -94,7 +94,7 @@ bot.on('message', message => {
 });
 bot.on('message', message => {
     if (parler == true) {
-        if (message.content === ".'-") {
+        if (message.content === '.\'-') {
             message.react("👍")
             message.reply('*Cela veut dire : Bon appétit !*');
         }
